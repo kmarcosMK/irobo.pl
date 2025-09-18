@@ -3,29 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iRobo.pl - Strona główna</title>
-  <link rel="stylesheet" href="cms/style.css">
+  <title>iRobo.pl – Robotyka, AI i automatyzacja</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#f0f4f8; color:#111; }
+    header { background:#1a1f36; color:#fff; text-align:center; padding:3rem 1rem; }
+    header h1 { margin:0; font-size:3rem; cursor:pointer; }
+    header p { margin:0.5rem 0 0; font-size:1.2rem; color:#b0c4de; }
+    main { display:grid; grid-template-columns:1fr; gap:2rem; max-width:1200px; margin:2rem auto; padding:0 1rem; }
+    @media(min-width:768px){ main { grid-template-columns:repeat(3,1fr); } }
+    .card { background:#fff; border-radius:1rem; padding:1.5rem; box-shadow:0 4px 10px rgba(0,0,0,0.05); transition:transform 0.2s, box-shadow 0.2s; }
+    .card:hover { transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.1); }
+    .card h2 { font-size:1.5rem; margin-bottom:0.5rem; color:#1a1f36; }
+    .card p { color:#555; margin-bottom:1rem; }
+    .card a { text-decoration:none; color:#0d6efd; font-weight:700; }
+    footer { text-align:center; padding:2rem 1rem; color:#555; border-top:1px solid #ddd; font-size:0.9rem; }
+    .disclaimer { font-size:0.75rem; color:#999; margin-top:1rem; }
+  </style>
 </head>
 <body>
-  <header>
-    <h1><a href="index.html">iRobo.pl</a></h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Strona główna</a></li>
-        <li><a href="articles/sztuczna-inteligencja.html">Sztuczna inteligencja</a></li>
-        <li><a href="articles/humanoidalne-roboty.html">Humanoidalne roboty</a></li>
-      </ul>
-    </nav>
+  <header onclick="window.location.href='index.html'">
+    <h1>🤖 iRobo.pl</h1>
+    <p>Robotyka, sztuczna inteligencja i automatyzacja przyszłości</p>
   </header>
 
   <main>
-    <h2>Witamy na iRobo.pl</h2>
-    <p>Znajdziesz tu artykuły o sztucznej inteligencji, robotyce i nowoczesnych technologiach.</p>
+    <div class="card">
+      <h2>Humanoidalne roboty – czy nadchodzi nowa era?</h2>
+      <p>Nowoczesne humanoidy, takie jak Tesla Optimus czy Figure 02, potrafią chodzić, analizować otoczenie i wchodzić w interakcje z człowiekiem. Czy staną się częścią naszej codzienności?</p>
+      <a href="articles/humanoidalne-roboty.html">Czytaj więcej →</a>
+    </div>
+    <div class="card">
+      <h2>Czym jest robotyka i dlaczego rozwija się tak szybko?</h2>
+      <p>Robotyka łączy inżynierię, informatykę i AI. Jeszcze niedawno roboty kojarzyły się z fabrykami, dziś wchodzą do medycyny, rolnictwa i życia codziennego.</p>
+      <a href="articles/robotyka.html">Czytaj więcej →</a>
+    </div>
+    <div class="card">
+      <h2>Sztuczna inteligencja – nie tylko dla gigantów technologii</h2>
+      <p>AI przestała być domeną korporacji. Dziś każdy korzysta z niej w telefonie, mapach czy aplikacjach. Staje się dostępna także dla małych firm i pasjonatów.</p>
+      <a href="articles/sztuczna-inteligencja.html">Czytaj więcej →</a>
+    </div>
+    <div class="card">
+      <h2>Automatyzacja w codziennym życiu – gdzie już jest, a gdzie dopiero nadejdzie?</h2>
+      <p>Automatyzacja to nie tylko fabryki. Coraz częściej wspiera nas w domu, pracy i miastach – od smart home po autonomiczne pojazdy.</p>
+      <a href="articles/automatyzacja.html">Czytaj więcej →</a>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 iRobo.pl</p>
-    <p style="font-size:0.75rem; color:#999;">Treści generowane przez AI mogą zawierać błędy i mają charakter wyłącznie informacyjny.</p>
+    © 2025 iRobo.pl – Wiedza i inspiracje ze świata technologii
+    <div class="disclaimer">Treści na stronie mogą być częściowo generowane przy użyciu narzędzi AI i mają charakter informacyjny. Mogą wystąpić błędy lub nieścisłości.</div>
   </footer>
 </body>
 </html>
