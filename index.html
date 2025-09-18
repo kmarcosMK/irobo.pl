@@ -5,7 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iRobo.pl – Robotyka, AI i automatyzacja</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#e0e7ef; color:#111; }
+    header { background: linear-gradient(135deg,#1a1f36,#3a3f5c); color:#fff; text-align:center; padding:3rem 1rem; }
+    header h1 { margin:0; font-size:3rem; }
+    header p { margin:0.5rem 0 0; font-size:1.2rem; color:#b0c4de; }
+    main { display:grid; grid-template-columns:1fr; gap:2rem; max-width:1200px; margin:2rem auto; padding:0 1rem; }
+    @media(min-width:768px){ main { grid-template-columns:repeat(3,1fr); } }
+    .card { background:#fff; border-radius:1rem; padding:1.5rem; box-shadow:0 8px 20px rgba(0,0,0,0.1); transition:transform 0.3s, box-shadow 0.3s; }
+    .card:hover { transform:translateY(-7px); box-shadow:0 12px 30px rgba(0,0,0,0.15); }
+    .card h2 { font-size:1.5rem; margin-bottom:0.5rem; color:#1a1f36; }
+    .card p { color:#555; margin-bottom:1rem; line-height:1.6; }
+    .card a { text-decoration:none; color:#0d6efd; font-weight:700; }
+    footer { text-align:center; padding:2rem 1rem; color:#555; border-top:1px solid #ccc; font-size:0.9rem; background:#f8f9fa; }
+    footer a { color:#0d6efd; margin:0 0.5rem; text-decoration:none; }
+    footer a:hover { text-decoration:underline; }
+  </style>
 </head>
 <body>
   <header>
@@ -14,6 +29,11 @@
   </header>
 
   <main>
+    <div class="card">
+      <h2>Humanoidalne roboty – od science fiction do rzeczywistości</h2>
+      <p>Nowoczesne humanoidy, takie jak Tesla Optimus czy Figure 02, potrafią chodzić, analizować otoczenie i wchodzić w interakcje z człowiekiem. Czy staną się częścią naszej codzienności?</p>
+      <a href="articles/humanoidalne-roboty.html">Czytaj więcej →</a>
+    </div>
     <div class="card">
       <h2>Czym jest robotyka i dlaczego rozwija się tak szybko?</h2>
       <p>Robotyka łączy inżynierię, informatykę i AI. Jeszcze niedawno roboty kojarzyły się z fabrykami, dziś wchodzą do medycyny, rolnictwa i życia codziennego.</p>
@@ -28,11 +48,6 @@
       <h2>Automatyzacja w codziennym życiu – gdzie już jest, a gdzie dopiero nadejdzie?</h2>
       <p>Automatyzacja to nie tylko fabryki. Coraz częściej wspiera nas w domu, pracy i miastach – od smart home po autonomiczne pojazdy.</p>
       <a href="articles/automatyzacja.html">Czytaj więcej →</a>
-    </div>
-    <div class="card">
-      <h2>Humanoidalne roboty – od science fiction do rzeczywistości</h2>
-      <p>Rozwój robotów, które coraz bardziej przypominają ludzi – od Tesli Optimus po Figure 02. Czy humanoidy zmienią naszą codzienność?</p>
-      <a href="articles/humanoidalne-roboty.html">Czytaj więcej →</a>
     </div>
   </main>
 
